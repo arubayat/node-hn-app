@@ -26,7 +26,7 @@ describe('app:routes', () => {
       .then(response => {
         expect(response.text).toMatch(/<div class="results">/);
         expect(response.text).toMatch(/<span class="score">1588<\/span>/);
-        expect(response.text).toMatch(/<a href="https:\/\/sample.title.story\/1">sample story title 1<\/a>/);
+        expect(response.text).toMatch(/<a href="https:\/\/sample.title.story\/1">Sample story title 1<\/a>/);
       });
   });
 
