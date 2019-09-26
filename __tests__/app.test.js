@@ -20,11 +20,13 @@ describe('app:routes', () => {
 
   test('should respond with a 200 with valid query parameters', () => {
     return request(app)
-      .get('/?storyCount=5&storyType=best')
+      .get('/?storyCount=1&storyType=best')
       .expect('Content-Type', /html/)
       .expect(200)
       .then(response => {
         expect(response.text).toMatch(/<div class="results">/);
+        expect(response.text).toMatch(/<span class="score">1588<\/span>/);
+        expect(response.text).toMatch(/<a href="https:\/\/sample.title.story\/1">sample story title 1<\/a>/);
       });
   });
 

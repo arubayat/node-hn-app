@@ -5,6 +5,7 @@
       <ul>
         <% stories.forEach(function (story) { %>
           <li class="list-unstyled">
+            <span class="score"><%= story.score %></span>
             <a href="<%= story.url %>"><%= story.title %></a>
           </li>
         <% }) %>

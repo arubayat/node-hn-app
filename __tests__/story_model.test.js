@@ -9,26 +9,31 @@ describe('getStories(storyType, storyCount)', () => {
     const storyData = {
       10: {
         id: 10,
+        score: 100,
         title: 'Story Title 10',
         url: 'https://story/10'
       },
       20: {
         id: 20,
+        score: 200,
         title: 'Story Title 20',
         url: 'https://story/20'
       },
       30: {
         id: 30,
+        score: 300,
         title: 'Story Title 30',
         url: 'https://story/30'
       },
       40: {
         id: 40,
+        score: 400,
         title: 'Story Title 40',
         url: 'https://story/40'
       },
       50: {
         id: 50,
+        score: 500,
         title: 'Story Title 50',
         url: 'https://story/50'
       }
