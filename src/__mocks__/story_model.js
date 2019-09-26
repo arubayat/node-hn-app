@@ -11,11 +11,9 @@ function getStories(storyType, storyCount) {
       kids: [],
       score: 1588,
       time: 1568801478,
-      title:
-        'Colorado Town Offers 1 Gbps for $60 After Years of Battling Comcast',
+      title: 'Sample story title 1',
       type: 'story',
-      url:
-        'https://www.techdirt.com/articles/20190904/08392642916/colorado-town-offers-1-gbps-60-after-years-battling-comcast.shtml'
+      url: 'https://sample.title.story/1'
     },
     {
       by: 'maxdeviant',
@@ -24,9 +22,9 @@ function getStories(storyType, storyCount) {
       kids: [],
       score: 1728,
       time: 1568686550,
-      title: 'Richard M. Stallman resigns',
+      title: 'Sample story title 2',
       type: 'story',
-      url: 'https://www.fsf.org/news/richard-m-stallman-resigns'
+      url: 'https://sample.title.story/2'
     },
     {
       by: 'andygcook',
@@ -35,11 +33,9 @@ function getStories(storyType, storyCount) {
       kids: [],
       score: 846,
       time: 1568729124,
-      title:
-        'Gitlab More Than Doubles Valuation to $2.75B Ahead of Planned 2020 IPO',
+      title: 'Sample story title 3',
       type: 'story',
-      url:
-        'https://www.forbes.com/sites/alexkonrad/2019/09/17/gitlab-doubles-valuation-to-nearly-3-billion/'
+      url: 'https://sample.title.story/3'
     },
     {
       by: 'hhs',
@@ -48,9 +44,9 @@ function getStories(storyType, storyCount) {
       kids: [],
       score: 670,
       time: 1568787003,
-      title: 'Smart TVs sending sensitive user data to Netflix and Facebook',
+      title: 'Sample story title 4',
       type: 'story',
-      url: 'https://www.ft.com/content/23ab2f68-d957-11e9-8f9b-77216ebe1f17'
+      url: 'https://sample.title.story/4'
     },
     {
       by: 'ph0rque',
@@ -59,10 +55,9 @@ function getStories(storyType, storyCount) {
       kids: [],
       score: 600,
       time: 1568899903,
-      title: 'Solar and Wind Power So Cheap They’re Outgrowing Subsidies',
+      title: 'Sample story title 5',
       type: 'story',
-      url:
-        'https://www.bloomberg.com/news/features/2019-09-19/solar-and-wind-power-so-cheap-they-re-outgrowing-subsidies'
+      url: 'https://sample.title.story/5'
     }
   ];
 
