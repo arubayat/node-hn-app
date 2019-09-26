@@ -12,6 +12,15 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ["build", "-t", "gcr.io/$PROJECT_ID/${_APP_NAME}", "."]
 
+# Deploy built artifacts to GKE as part of a pipeline
+- name: 'gcr.io/cloud-builders/gke-deploy:stable'
+  args:
+  - run
+  - --image=gcr.io/$PROJECT_ID/${_APP_NAME}:latest
+  - --location=${_CLUSTER_LOCATION}
+  - --cluster=${_CLUSTER_NAME}
+  - --expose=3000
+
 # If the build is successful, the resulting image is pushed to Container Registry and is associated with the build metadata.
 images:
 - gcr.io/$PROJECT_ID/${_APP_NAME}
@@ -19,3 +28,5 @@ images:
 # Default values for user defined substitutions. Use the --substitutions flag in the gcloud builds submit command to override defaults.
 substitutions:
   _APP_NAME: node-hn-app
+  _CLUSTER_NAME: hn-app-demo
+  _CLUSTER_LOCATION: us-central1-a # Can be zone or region based on how the cluster was setup
