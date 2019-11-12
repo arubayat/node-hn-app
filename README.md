@@ -77,7 +77,7 @@ substitutions:
 
 **NOTE**: Use `npm run` to execute any of the scripts below.
 
-- Run `init-defaults` to configure docker and set project and location defaults
+- Run `gcp:init-defaults` to configure docker and set project and location defaults
 - Run `gcp:enable-apis` to enable all the GCP APIs needed for building and deploying this application
 - Run `gcp:create-cluster` to create a GKE cluster
 - Run `gcp:enable-cluster-access` to give Cloud Build access to the GKE cluster
