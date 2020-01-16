@@ -75,21 +75,19 @@ substitutions:
 
 ## Helper scripts to enable GCP functionality
 
-**NOTE**: Use `npm run` to execute any of the scripts below.
-
-- Run `gcp:init-defaults` to configure docker and set project and location defaults
-- Run `gcp:enable-apis` to enable all the GCP APIs needed for building and deploying this application
-- Run `gcp:create-cluster` to create a GKE cluster
-- Run `gcp:enable-cluster-access` to give Cloud Build access to the GKE cluster
-- Run `gcp:delete-cluster` to delete the cluster created by `gcp:create-cluster`
+- Run `npm run gcp:init-defaults` to configure docker and set project and location defaults
+- Run `npm run gcp:enable-apis` to enable all the GCP APIs needed for building and deploying this application
+- Run `npm run gcp:create-cluster` to create a GKE cluster
+- Run `npm run gcp:enable-cluster-access` to give Cloud Build access to the GKE cluster
+- Run `npm run gcp:delete-cluster` to delete the cluster created by `gcp:create-cluster`
 
 ## Containerize the application
 
-- Run `docker:build-container` to build the docker image locally
-- Run `gcp:build-container-dockerfile` to build and store the image remotely
-- Run `gcp:build-container-cloudbuild` to remotely build the image after successfully executing the steps defined in cloudbuild.yaml
+- Run `npm run docker:build-container` to build the docker image locally
+- Run `npm run gcp:build-container-dockerfile` to build and store the image remotely
+- Run `npm run gcp:build-container-cloudbuild` to remotely build the image after successfully executing the steps defined in cloudbuild.yaml
 
 ## Running the container
 
-- Run `docker:run-container` to run the container locally
-- Run `gcp:deploy-latest-image` to deploy and run the latest image remotely on the GKE cluster
+- Run `npm run docker:run-container` to run the container locally
+- Run `npm run gcp:deploy-latest-image` to deploy and run the latest image remotely on the GKE cluster
